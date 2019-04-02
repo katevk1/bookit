@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "materialize": "^1.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-materialize": "^3.0.3",
     "react-scripts": "2.1.8"
   },
   "scripts": {
@@ -21,5 +23,20 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katevk1/bookit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katevk1/bookit/issues"
+  },
+  "homepage": "https://github.com/katevk1/bookit#readme",
+  "devDependencies": {
+    "@types/react-redux": "^7.0.6"
+  }
 }
