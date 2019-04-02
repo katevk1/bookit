@@ -5,9 +5,9 @@ function Nav(){
         <nav className="white" role="navigation">
         {/* <div className="nav-wrapper container"> */}
         <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Book It</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
+    <div className="nav-wrapper">
+      <a href="#" className="brand-logo">Book It</a>
+      <ul id="nav-mobile" className="right hide-on-med-and-down">
         <li><a href="#">I'm an Artist</a></li>
         <li><a href="#">I want to book a band</a></li>
         <li><a href="#">Login</a></li>

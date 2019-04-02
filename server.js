@@ -16,8 +16,6 @@ app.set("view engine", "ejs");
 
 //Routes aka Controller
 require("./routes/apiRoutes")(app);
-// require("./config/connection")(app);
-
 
 var syncOptions = { force: false };
 

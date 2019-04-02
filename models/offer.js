@@ -1,5 +1,5 @@
 module.exports = (sequilize, DataTypes) => {
-    const Ad = sequilize.define('Ad', {
+    const Offer = sequilize.define('Offer', {
         description: {
             type: DataTypes.STRING
         },
@@ -7,10 +7,10 @@ module.exports = (sequilize, DataTypes) => {
             type: DataTypes.INTEGER
         }
     })
-    Ad.associate = function(models){
-        Ad.belongsTo(models.band, {
+    Offer.associate = function(models){
+        Offer.belongsTo(models.Band, {
             onDelete: "cascade"
         })
     }
-    return Ad
+    return Offer
 }
