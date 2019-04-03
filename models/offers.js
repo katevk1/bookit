@@ -12,5 +12,10 @@ module.exports = (sequilize, DataTypes) => {
             onDelete: "cascade"
         })
     }
+    Offer.associate = function(models){
+        Offer.belongsTo(models.EventCoordinator, {
+            onDelete: "cascade"
+        })
+    }
     return Offer
 }
