@@ -1,3 +1,5 @@
+
+
 module.exports = function(sequelize, DataTypes) {
     var Band = sequelize.define("Band", {
         id: {
@@ -11,7 +13,7 @@ module.exports = function(sequelize, DataTypes) {
         genre: {
             type: DataTypes.STRING
         },
-        imageUrl: {
+        imageUrl:  {
             type: DataTypes.STRING
         }
     })
