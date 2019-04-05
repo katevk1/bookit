@@ -2,15 +2,10 @@
     "development": {
       "username": "root",
       "password": "root",
-<<<<<<< Updated upstream
       "database": "bookitexample",
       "host": "127.0.0.1",
-=======
-      "database": "bookitdb",
-      "host": "localhost",
->>>>>>> Stashed changes
       "dialect": "mysql",
-      "port": 3306
+      "port": 8889
     },
     "test": {
       "username": "root",
