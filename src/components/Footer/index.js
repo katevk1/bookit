@@ -6,7 +6,7 @@ function Footer(){
           <div className="container">
             <div className="row">
               <div className="col l6 s12">
-                <h5 className="white-text"><img src={'http://i63.tinypic.com/mu353.png'}></img></h5>
+                <h5 className="white-text"><img src={'http://i63.tinypic.com/mu353.png'} alt="Jeff and Kate"></img></h5>
               </div>
               <div className="col l3 s12">
                 <h5 className="white-text">Connect</h5>

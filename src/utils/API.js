@@ -23,4 +23,7 @@ export default {
   getBand: function(id) {
     return axios.get("/api/bands/" + id);
   },
-};
+  addUser: function(userData){
+      return axios.post("api/user", userData)
+  }
+}

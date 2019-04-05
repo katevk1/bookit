@@ -2,35 +2,35 @@ const db = require("../models");
 
 module.exports = {
   findAll: function(req, res) {
-    db.Offer
+    db.User
       .find(req.query)
       .sort({ date: -1 })
-      .then(dbOffer => res.json(dbOffer))
+      .then(dbUser => res.json(dbUser))
       .catch(err => res.status(422).json(err));
   },
   findById: function(req, res) {
-    db.Offer
+    db.User
       .findById(req.params.id)
-      .then(dbOffer => res.json(dbOffer))
+      .then(dbUser => res.json(dbUser))
       .catch(err => res.status(422).json(err));
   },
   create: function(req, res) {
-    db.Offer
+    db.User
       .create(req.body)
-      .then(dbOffer => res.json(dbOffer))
+      .then(dbUser => res.json(dbUser))
       .catch(err => res.status(422).json(err));
   },
   update: function(req, res) {
-    db.Offer
+    db.User
       .findOneAndUpdate({ _id: req.params.id }, req.body)
-      .then(dbOffer => res.json(dbOffer))
+      .then(dbUser => res.json(dbUser))
       .catch(err => res.status(422).json(err));
   },
   remove: function(req, res) {
-    db.Offer
+    db.User
       .findById({ _id: req.params.id })
-      .then(dbOffer => dbOffer.remove())
-      .then(dbOffer => res.json(dbOffer))
+      .then(dbUser => dbUser.remove())
+      .then(dbUser => res.json(dbUser))
       .catch(err => res.status(422).json(err));
   }
-}
+};
