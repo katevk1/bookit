@@ -1,14 +1,14 @@
 var express = require("express");
 
 var app = express();
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 3001;
 var db = require("./models");
 var routes = require('./routes')
 
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static("./public/"));
+app.use(express.static("./client/public/"));
 app.set("view engine", "ejs");
 
 app.use(routes);

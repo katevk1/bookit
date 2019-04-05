@@ -10,7 +10,13 @@ module.exports = function(sequelize, DataTypes) {
         },
         genre: {
             type: DataTypes.STRING
+        },
+        imageUrl: {
+            type: DataTypes.STRING
         }
     })
+    Band.associate = function(models){
+        Band.hasMany(models.Offer)
+    }
     return Band
 }
