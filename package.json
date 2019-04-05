@@ -15,7 +15,11 @@
     "react-materialize": "^3.0.3",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
+<<<<<<< Updated upstream
     "sequelize": "^5.2.9"
+=======
+    "sequelize": "^5.2.12"
+>>>>>>> Stashed changes
   },
   "scripts": {
     "start": "react-scripts start",

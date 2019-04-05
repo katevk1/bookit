@@ -1,11 +1,11 @@
+
+
 module.exports = function(sequelize, DataTypes) {
     var Band = sequelize.define("Band", {
         id: {
-            type: DataTypes.INTEGER,
-            autoincrement: true,
-            primaryKey: true
+            type: DataTypes.INTEGER
         },
-        name: {
+        band_name: {
             type: DataTypes.STRING
         },
         genre: {
