@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-    var EventCoordinator = sequelize.define("EventCoordinator", {
+    var User = sequelize.define("User", {
         id: {
             type: DataTypes.INTEGER,
             autoincrement: true,
@@ -7,10 +7,10 @@ module.exports = function(sequelize, DataTypes) {
         },
         name: {
             type: DataTypes.STRING
-        },
-        genre: {
-            type: DataTypes.STRING
         }
     })
-    return EventCoordinator
+    User.associate = function(models){
+        User.hasMany(models.Offer)
+    }
+    return User
 }

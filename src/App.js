@@ -25,13 +25,3 @@ function App() {
 }
 
 export default App
-// added routing to handle url changes
-{/* <div className="App">
-      
-<header className="App-header">
-  <Nav/>
-
- <HomePage/>
-  <Footer/> 
-</header>
-</div> */}

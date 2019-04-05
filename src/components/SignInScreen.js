@@ -1,5 +1,6 @@
 // Import FirebaseAuth and firebase.
 import React from 'react';
+import API from '../utils/API'
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import firebase from 'firebase';
 
@@ -15,7 +16,8 @@ class SignInScreen extends React.Component {
  
   // The component's Local state.
   state = {
-    isSignedIn: false // Local signed-in state.
+    isSignedIn: false, // Local signed-in state.
+    user: {}
   };
  
   // Configure FirebaseUI.
@@ -43,6 +45,13 @@ class SignInScreen extends React.Component {
   componentWillUnmount() {
     this.unregisterAuthObserver();
   }
+
+  newUser(){
+    API.addUser({
+      name: firebase.auth().currentUser.displayName,
+      email: firebase.auth().currentUser.email
+    })
+  }
  
   render() {
     if (!this.state.isSignedIn) {
@@ -54,8 +63,7 @@ class SignInScreen extends React.Component {
         </div>
       );
     }
-    console.log(firebase.auth().currentUser);
-    
+    this.newUser()
     return (
       <div>
         <h1>My App</h1>

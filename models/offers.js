@@ -3,9 +3,6 @@ module.exports = (sequilize, DataTypes) => {
         description: {
             type: DataTypes.STRING
         },
-        basePay: {
-            type: DataTypes.INTEGER
-        }
     })
     Offer.associate = function(models){
         Offer.belongsTo(models.Band, {
@@ -13,7 +10,7 @@ module.exports = (sequilize, DataTypes) => {
         })
     }
     Offer.associate = function(models){
-        Offer.belongsTo(models.EventCoordinator, {
+        Offer.belongsTo(models.User, {
             onDelete: "cascade"
         })
     }

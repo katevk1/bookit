@@ -7,7 +7,7 @@ function Nav(){
         {/* <div className="nav-wrapper container"> */}
           <nav>
             <div className="nav-wrapper">
-              <a href="#" className="brand-logo">Book It</a>
+              <Link to="/" className="brand-logo">Book It</Link>
               <ul id="nav-mobile" className="right hide-on-med-and-down">
                 <li><a href="#">I'm an Artist</a></li>
                 <li><a href="#">I want to book a band</a></li>
