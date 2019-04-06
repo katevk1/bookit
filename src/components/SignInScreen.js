@@ -63,7 +63,8 @@ class SignInScreen extends React.Component {
         </div>
       );
     }
-    this.newUser()
+    window.localStorage.setItem("name", firebase.auth().currentUser.displayName)
+    window.localStorage.setItem("email", firebase.auth().currentUser.email)
     return (
       <div>
         <h1>My App</h1>

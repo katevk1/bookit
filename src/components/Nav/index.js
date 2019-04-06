@@ -9,8 +9,6 @@ function Nav(){
             <div className="nav-wrapper">
               <Link to="/" className="brand-logo">Book It</Link>
               <ul id="nav-mobile" className="right hide-on-med-and-down">
-                <li><a href="#">I'm an Artist</a></li>
-                <li><a href="#">I want to book a band</a></li>
                 <li><Link to={"/login"}>Login</Link></li>
               </ul>
             </div>
