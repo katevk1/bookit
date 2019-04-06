@@ -1,6 +1,24 @@
 SELECT * FROM bookitdb.Bands;
 
 INSERT INTO Bands (id, name, description, imageUrl)
+<<<<<<< HEAD
+	VALUES (1, 'Chipper Jones', 'placeholder for description', 'placeholder.img' );
+    
+INSERT INTO Bands (id, name, description, imageUrl)
+	VALUES (2, 'Suspirians', 'placeholder for description', 'placeholder.img' );
+    
+INSERT INTO Bands (id, name, description, imageUrl)
+	VALUES (3, 'The Young', 'placeholder for description', 'placeholder.img' );
+
+INSERT INTO Bands (id, name, description, imageUrl)
+	VALUES (4, 'Spray Paint', 'placeholder for description', 'placeholder.img' );
+    
+INSERT INTO Bands (id, name, description, imageUrl)
+	VALUES (5, 'Mirror Travel', 'placeholder for description', 'placeholder.img' );
+    
+INSERT INTO Bands (id, name, description, imageUrl)
+	VALUES (6, 'The Black Angels', 'placeholder for description', 'placeholder.img' );
+=======
 	VALUES (1, 'Chipper Jones', 'placeholder for description', 'https://rotocolorrhythm.com/wp-content/uploads/2014/09/a-to-b-boxed.jpg' );
     
 INSERT INTO Bands (id, name, description, imageUrl)
@@ -18,3 +36,4 @@ INSERT INTO Bands (id, name, description, imageUrl)
 INSERT INTO Bands (id, name, des, imageUrl)
 	VALUES (6, 'The Black Angels', 'placeholder for description', 'http://theblackangels.com/wp-content/uploads/2016/09/Indigo-Meadow-front.png' );
 
+>>>>>>> f523ff8cd0b9539c0e2245e5389aaeb278073e35

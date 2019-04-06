@@ -83,12 +83,13 @@ function HomePage() {
 
             <div className="icon-block">
             <div className="col s12 m4">
-
+              <Link to="/band">
                 <div className="hvrbox">
                   <h2 className="center brown-text">
                     <img src={'http://theblackangels.com/wp-content/uploads/2016/09/Indigo-Meadow-front.png'} height="200px" className="hvrbox-layer_bottom" /></h2>
                   <div className="hvrbox-layer_top"><div className="hvrbox-text">The Black Angels</div>
                   </div></div>
+                </Link>
                 {/* <h5 className="center">Suspirians</h5> */}
 
               </div>

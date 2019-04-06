@@ -73,7 +73,8 @@ class SignInScreen extends React.Component {
         </div>
       );
     }
-    this.newUser()
+    window.localStorage.setItem("name", firebase.auth().currentUser.displayName)
+    window.localStorage.setItem("email", firebase.auth().currentUser.email)
     return (
       <div className="fireBase">
         <h5>Thanks for signing in! Head back to the <Link to="/">home page</Link></h5>

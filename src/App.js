@@ -17,7 +17,7 @@ function App() {
                 <Nav/>
                 <Route exact path="/" component={HomePage} />
                 <Route exact path="/login" component={SignInScreen} />
-                <Route exact path="/band/:id" component={BandPage} />
+                <Route exact path="/band" component={BandPage} />
                 <Footer/>
             </div>
         </Router>
