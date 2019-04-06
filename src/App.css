@@ -6,6 +6,17 @@
  .materialize-red {
   background-color: #e51c23 !important;
 }
+.bookForm {
+  width: 200px;
+  background-color:rgba(111, 103, 89, 0.5);
+  color: white
+}
+.bandpage-container {
+  margin: 20px;
+  color: white;
+  background-color:rgba(97, 64, 7, 0.7);
+  
+}
 .signIn {
 height: 350px;
 margin-top: 10px;

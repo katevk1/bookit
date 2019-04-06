@@ -1,7 +1,7 @@
 -- Drops the blogger if it exists currently --
-DROP DATABASE IF EXISTS bookitdb;;
+-- DROP DATABASE IF EXISTS bookitdb;;
 -- Creates the "blogger" database --
-CREATE DATABASE bookitdb;;
+-- CREATE DATABASE bookitdb;;
 
 
 

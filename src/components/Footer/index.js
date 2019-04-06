@@ -1,22 +1,16 @@
 import React from "react"
+import {Link} from "react-router-dom"
+
 
 function Footer(){
     return(
-        <footer className="footer">
+       <Link to="https://github.com/katevk1/bookit"> <footer className="footer">
           {/* <div className="container">
             <div className="row"> */}
               <div className="col l6 s12"><img src={'http://i63.tinypic.com/mu353.png'} alt="Jeff and Kate"></img>
               </div>
-              <div className="col l3 s12">
-                {/* <h5 className="white-text">Connect</h5>
-                <ul>
-                  <li><a className="white-text" href="#!">Jeff</a></li>
-                  <li><a className="white-text" href="#!">Kate</a></li>
-                </ul> */}
-              </div>
-            {/* </div>
-          </div> */}
-        </footer>
+    
+        </footer></Link>
     )
 }
 export default Footer
